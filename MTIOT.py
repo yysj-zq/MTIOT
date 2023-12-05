@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Dec  4 18:26:05 2023
-
-@author: zhq
-"""
+# Qi Zhao
 
 import os
 import pandas as pd
@@ -18,16 +13,13 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sktime.transformations.panel.rocket import MiniRocket
 from joblib import Parallel, delayed
 
-
-
-
 class Mtiot():
     
     def __init__(self,
                  path_label_train = "./data/label.csv",
                  path_ab1_train = './data/NDATA',
-                 n_jobs= -1):
-
+                 n_jobs= 1):
+        self.n_jobs = n_jobs
         self.path_label_train = path_label_train
         self.path_ab1_train   = path_ab1_train
         
@@ -54,7 +46,7 @@ class Mtiot():
         
         x = self.path2data(path_ab1_pre)
         
-        self.predict_result = Parallel(n_jobs=-1)(delayed(predict_model)(model, x) for model in self.models)
+        self.predict_result = Parallel(n_jobs = self.n_jobs)(delayed(predict_model)(model, x) for model in self.models)
         
         return self.predict_result
     
