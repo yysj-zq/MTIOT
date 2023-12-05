@@ -32,5 +32,5 @@ path_result = 'path you want to store result'
 model = Mtiot(path_train_label, path_train_data, n_jobs = -1)
 model.result(path_data, path_result)
 ```
-The train/predict data path should point to a folder containing AB1 files. Seem like [./data/NDATA](./Data/NDATA)  
+The train/predict data path should point to a folder containing AB1 files. Seem like [./data/NDATA](./data/NDATA)  
 The label path should point to a CSV file, where the first column contains each subtype separated by commas, and the second column contains the corresponding ab1 file name. Seem like [./data/label.csv](./data/label.csv)
