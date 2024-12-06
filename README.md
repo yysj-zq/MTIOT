@@ -1,14 +1,17 @@
-# MTIOT
-Identifying HPV subtypes from multiple infection data in an individual
-## Examples
-Python 3.7.13  
-pandas 1.3.5  
-biopython 1.78  
-sktime 0.12.1  
-numpy 1.21.5  
-scikit-learn 1.0.2  
-joblib 1.2.0  
-### Train with default data
+# About
+MTIOT: Identifying HPV subtypes from multiple infection data in an individual
+
+# Getting Started
+
+```bash
+git clone https://github.com/yysj-zq/MTIOT.git
+cd MTIOT
+conda create -n mtiot python=3.7
+conda activate mtiot
+pip install -r requirements.txt
+```
+
+# Train with default data
 ```python
 from MTIOT import Mtiot
 
@@ -18,7 +21,7 @@ path_result = 'path you want to store result'
 model = Mtiot(n_jobs = -1)
 model.result(path_data, path_result)
 ```
-### Train with your own data
+# Train with your own data
 ```python
 from MTIOT import Mtiot
 
