@@ -1,7 +1,5 @@
 # MTIOT
 Identifying HPV subtypes from multiple infection data in an individual
-## Abstract
-Persistent infection with high-risk human papillomavirus (hrHPV) is the principal etiological factor in the development of cervical epithelial neoplasia and cervical cancer. Consequently, the execution of HPV typing tests and the confirmation of ongoing infections bear substantial clinical significance.  The World Health Organization endorses HPV-DNA testing as the primary method for cervical cancer screening, yet the current methodologies exhibit several limitations, including low sensitivity, suboptimal accuracy, and an inability to perform comprehensive typing. In response to these challenges, we have devised a novel HPV detection method, designated MTIOT (Multiple subTypes In One Time), predicated on HPV-DNA. This method enables swift and precise HPV typing tests on samples with multiple infections. When applied to simulated samples with multiple infections, MTIOT demonstrates exceptional performance, achieving 98% specificity and sensitivity. MTIOT offers a novel approach for the precise detection of high-risk HPV infections and is poised to play a pivotal role in cervical cancer screening. This study furnishes robust support for future clinical applications and holds promise for enhancing the efficiency and precision of cervical cancer screening. Future research will focus on further clinical validation and methodological optimization to ensure the practical efficacy of this approach.
 ## Examples
 Python 3.7.13  
 pandas 1.3.5  
